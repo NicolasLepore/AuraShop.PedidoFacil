@@ -1,0 +1,28 @@
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace AuraShop.PedidoFacil.API.Models
+{
+    public class Item
+    {
+        [Required]
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; } 
+
+        [Required]
+        [MaxLength(25)]
+        public string? Nome { get; set; }
+
+        [Required]
+        [Range(0, 50)]
+        public int Tamanho { get; set; }
+
+        [Required]
+        [MaxLength(15)]
+        public string? Cor { get; set; }
+
+        public virtual ICollection<ItemPedido>? ItensPedidos { get; set; }
+
+    }
+}

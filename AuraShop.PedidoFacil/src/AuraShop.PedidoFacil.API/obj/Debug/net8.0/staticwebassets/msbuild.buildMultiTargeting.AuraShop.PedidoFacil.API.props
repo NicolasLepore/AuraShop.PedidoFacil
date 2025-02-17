@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AuraShop.PedidoFacil.API.props" />
+</Project>

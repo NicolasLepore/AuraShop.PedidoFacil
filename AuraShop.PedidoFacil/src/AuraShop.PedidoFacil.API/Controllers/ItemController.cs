@@ -3,6 +3,7 @@ using AuraShop.PedidoFacil.API.Data.Dtos;
 using AuraShop.PedidoFacil.API.Models;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace AuraShop.PedidoFacil.API.Controllers
 {
@@ -33,10 +34,12 @@ namespace AuraShop.PedidoFacil.API.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var itens = _context.Itens.ToList();  
+            var itens = _context.Itens.AsNoTracking().ToList();  
+
             var dto = _mapper.Map<IEnumerable<ReadItemDto>>(itens);
 
             return Ok(dto);
         }
+
     }
 }

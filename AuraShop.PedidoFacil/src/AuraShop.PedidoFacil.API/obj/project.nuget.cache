@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bJaqZZ2TQe50fZOIQYOpjgLMh9aLqPx8CGiKR3q3hnyCqbKsZqizuqXEoD9NHKzaRlgemVZCeRb0FjKognemrA==",
+  "dgSpecHash": "Vfyyv31Jp64tsLu3SD3TQ1yQ/+gdA8YU5n8NUWReJ3MYN72lujdkp3+GIXn42f4ahYGdWRGGzbKzCiBjdRhW3Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj",
+  "projectFilePath": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nigam\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\nigam\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",

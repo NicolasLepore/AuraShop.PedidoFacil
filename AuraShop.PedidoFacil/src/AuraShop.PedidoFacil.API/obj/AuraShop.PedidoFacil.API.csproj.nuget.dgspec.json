@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj": {}
+    "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj": {
+    "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj",
+        "projectUniqueName": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj",
         "projectName": "AuraShop.PedidoFacil.API",
-        "projectPath": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj",
+        "projectPath": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj",
         "packagesPath": "C:\\Users\\nigam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil.API\\obj\\",
+        "outputPath": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nigam\\AppData\\Roaming\\NuGet\\NuGet.Config",

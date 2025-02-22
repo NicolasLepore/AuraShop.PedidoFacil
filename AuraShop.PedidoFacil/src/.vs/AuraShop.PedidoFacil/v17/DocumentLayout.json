@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C79CBC21-8FC7-48F0-BBC1-39506AC42506}|AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj|c:\\users\\nigam\\source\\repos\\aurashop.pedidofacil\\aurashop.pedidofacil\\src\\aurashop.pedidofacil.api\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C79CBC21-8FC7-48F0-BBC1-39506AC42506}|AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj|solutionrelative:aurashop.pedidofacil.api\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C79CBC21-8FC7-48F0-BBC1-39506AC42506}|AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj|c:\\users\\nigam\\source\\repos\\aurashop.pedidofacil\\aurashop.pedidofacil\\src\\aurashop.pedidofacil.api\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C79CBC21-8FC7-48F0-BBC1-39506AC42506}|AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj|solutionrelative:aurashop.pedidofacil.api\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C79CBC21-8FC7-48F0-BBC1-39506AC42506}|AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj|c:\\users\\nigam\\source\\repos\\aurashop.pedidofacil\\aurashop.pedidofacil\\src\\aurashop.pedidofacil.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C79CBC21-8FC7-48F0-BBC1-39506AC42506}|AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj|solutionrelative:aurashop.pedidofacil.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C79CBC21-8FC7-48F0-BBC1-39506AC42506}|AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj|c:\\users\\nigam\\source\\repos\\aurashop.pedidofacil\\aurashop.pedidofacil\\src\\aurashop.pedidofacil.api\\controllers\\itempedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C79CBC21-8FC7-48F0-BBC1-39506AC42506}|AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj|solutionrelative:aurashop.pedidofacil.api\\controllers\\itempedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C79CBC21-8FC7-48F0-BBC1-39506AC42506}|AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj|c:\\users\\nigam\\source\\repos\\aurashop.pedidofacil\\aurashop.pedidofacil\\src\\aurashop.pedidofacil.api\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C79CBC21-8FC7-48F0-BBC1-39506AC42506}|AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj|solutionrelative:aurashop.pedidofacil.api\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C79CBC21-8FC7-48F0-BBC1-39506AC42506}|AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj|c:\\users\\nigam\\source\\repos\\aurashop.pedidofacil\\aurashop.pedidofacil\\src\\aurashop.pedidofacil.api\\models\\itempedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C79CBC21-8FC7-48F0-BBC1-39506AC42506}|AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj|solutionrelative:aurashop.pedidofacil.api\\models\\itempedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C79CBC21-8FC7-48F0-BBC1-39506AC42506}|AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj|c:\\users\\nigam\\source\\repos\\aurashop.pedidofacil\\aurashop.pedidofacil\\src\\aurashop.pedidofacil.api\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C79CBC21-8FC7-48F0-BBC1-39506AC42506}|AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj|solutionrelative:aurashop.pedidofacil.api\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,54 +42,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ItemController.cs",
-              "DocumentMoniker": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\Controllers\\ItemController.cs",
-              "RelativeDocumentMoniker": "AuraShop.PedidoFacil.API\\Controllers\\ItemController.cs",
-              "ToolTip": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\Controllers\\ItemController.cs",
-              "RelativeToolTip": "AuraShop.PedidoFacil.API\\Controllers\\ItemController.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAYwCoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T02:26:41.044Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Pedido.cs",
-              "DocumentMoniker": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\Models\\Pedido.cs",
-              "RelativeDocumentMoniker": "AuraShop.PedidoFacil.API\\Models\\Pedido.cs",
-              "ToolTip": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\Models\\Pedido.cs",
-              "RelativeToolTip": "AuraShop.PedidoFacil.API\\Models\\Pedido.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAYwA0AAAAAAAAA",
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\Models\\Item.cs",
+              "RelativeDocumentMoniker": "AuraShop.PedidoFacil.API\\Models\\Item.cs",
+              "ToolTip": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\Models\\Item.cs",
+              "RelativeToolTip": "AuraShop.PedidoFacil.API\\Models\\Item.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T17:46:12.46Z"
+              "WhenOpened": "2025-02-22T23:16:08.171Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PedidoController.cs",
-              "DocumentMoniker": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\Controllers\\PedidoController.cs",
-              "RelativeDocumentMoniker": "AuraShop.PedidoFacil.API\\Controllers\\PedidoController.cs",
-              "ToolTip": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\Controllers\\PedidoController.cs",
-              "RelativeToolTip": "AuraShop.PedidoFacil.API\\Controllers\\PedidoController.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAgwCoAAAAAAAAA",
+              "Title": "ItemPedidoController.cs",
+              "DocumentMoniker": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\Controllers\\ItemPedidoController.cs",
+              "RelativeDocumentMoniker": "AuraShop.PedidoFacil.API\\Controllers\\ItemPedidoController.cs",
+              "ToolTip": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\Controllers\\ItemPedidoController.cs",
+              "RelativeToolTip": "AuraShop.PedidoFacil.API\\Controllers\\ItemPedidoController.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAQwCQAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T17:31:47.108Z",
+              "WhenOpened": "2025-02-22T23:13:52.465Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\Program.cs",
-              "RelativeDocumentMoniker": "AuraShop.PedidoFacil.API\\Program.cs",
-              "ToolTip": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\Program.cs",
-              "RelativeToolTip": "AuraShop.PedidoFacil.API\\Program.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACsAAAAAAAAA",
+              "Title": "ItemPedido.cs",
+              "DocumentMoniker": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\Models\\ItemPedido.cs",
+              "RelativeDocumentMoniker": "AuraShop.PedidoFacil.API\\Models\\ItemPedido.cs",
+              "ToolTip": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\Models\\ItemPedido.cs",
+              "RelativeToolTip": "AuraShop.PedidoFacil.API\\Models\\ItemPedido.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T17:06:04.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T23:13:02.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Pedido.cs",
+              "DocumentMoniker": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\Models\\Pedido.cs",
+              "RelativeDocumentMoniker": "AuraShop.PedidoFacil.API\\Models\\Pedido.cs",
+              "ToolTip": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\AuraShop.PedidoFacil\\src\\AuraShop.PedidoFacil.API\\Models\\Pedido.cs",
+              "RelativeToolTip": "AuraShop.PedidoFacil.API\\Models\\Pedido.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T23:03:50.747Z"
             }
           ]
         }

@@ -4,6 +4,7 @@ using AuraShop.PedidoFacil.API.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AuraShop.PedidoFacil.API.Migrations
 {
     [DbContext(typeof(PedidoFacilContext))]
-    partial class PedidoFacilContextModelSnapshot : ModelSnapshot
+    [Migration("20250222174957_DatabaseAuraShopPedidoFacil")]
+    partial class DatabaseAuraShopPedidoFacil
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -96,9 +99,6 @@ namespace AuraShop.PedidoFacil.API.Migrations
 
                     b.Property<bool>("Pago")
                         .HasColumnType("tinyint(1)");
-
-                    b.Property<float?>("ValorTotal")
-                        .HasColumnType("float");
 
                     b.HasKey("Id");
 

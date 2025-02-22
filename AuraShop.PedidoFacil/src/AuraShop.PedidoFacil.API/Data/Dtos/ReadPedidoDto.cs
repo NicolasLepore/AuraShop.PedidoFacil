@@ -12,6 +12,7 @@ namespace AuraShop.PedidoFacil.API.Data.Dtos
         public bool Entregue { get; set; } = false;
         public DateTime DataPedido { get; set; }
         public DateTime DataEntrega { get; set; }
-        public virtual ICollection<ItemPedido>? ItensPedidos { get; set; }
+        public float ValorTotal { get; set; }
+        public virtual ICollection<ReadItemPedidoDto>? ItensPedidos { get; set; }
     }
 }

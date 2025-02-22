@@ -27,6 +27,17 @@ namespace AuraShop.PedidoFacil.API.Models
         [AllowNull]
         public DateTime? DataEntrega { get; set; } = null;
 
+        public float? ValorTotal { get; set; }
+
         public virtual ICollection<ItemPedido>? ItensPedidos { get; set; }
+
+        public void CalcularValorTotal()
+        {
+            foreach(var itemPedido in ItensPedidos)
+            {
+                ValorTotal = ValorTotal + 
+                    (itemPedido.Quantidade * itemPedido.Item!.Preco);
+            }
+        }
     } 
 }

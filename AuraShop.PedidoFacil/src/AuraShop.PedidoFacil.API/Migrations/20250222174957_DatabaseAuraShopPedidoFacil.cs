@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace AuraShop.PedidoFacil.API.Migrations
 {
     /// <inheritdoc />
-    public partial class AuraShopEFDatabase : Migration
+    public partial class DatabaseAuraShopPedidoFacil : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -25,7 +25,8 @@ namespace AuraShop.PedidoFacil.API.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Tamanho = table.Column<int>(type: "int", nullable: false),
                     Cor = table.Column<string>(type: "varchar(15)", maxLength: 15, nullable: false)
-                        .Annotation("MySql:CharSet", "utf8mb4")
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Preco = table.Column<float>(type: "float", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -39,7 +40,7 @@ namespace AuraShop.PedidoFacil.API.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    Nome = table.Column<string>(type: "longtext", nullable: true)
+                    Nome = table.Column<string>(type: "varchar(25)", maxLength: 25, nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Pago = table.Column<bool>(type: "tinyint(1)", nullable: false),
                     Entregue = table.Column<bool>(type: "tinyint(1)", nullable: false),

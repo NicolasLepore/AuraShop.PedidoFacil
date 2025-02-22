@@ -8,8 +8,7 @@ namespace AuraShop.PedidoFacil.API.Profiles
     {
         public ItemProfile()
         {
-            CreateMap<Item, ReadItemDto>()
-                .ForMember(dto => dto.ItensPedidos, opt => opt.MapFrom(item => item.ItensPedidos));
+            CreateMap<Item, ReadItemDto>();
 
             CreateMap<CreateItemDto, Item>();
         }

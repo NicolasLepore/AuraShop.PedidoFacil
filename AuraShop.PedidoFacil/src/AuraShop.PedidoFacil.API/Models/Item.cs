@@ -22,6 +22,9 @@ namespace AuraShop.PedidoFacil.API.Models
         [MaxLength(15)]
         public string? Cor { get; set; }
 
+        [Required]
+        public float? Preco { get; set; }
+
         public virtual ICollection<ItemPedido>? ItensPedidos { get; set; }
 
     }

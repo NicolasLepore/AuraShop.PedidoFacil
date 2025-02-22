@@ -20,13 +20,14 @@ namespace AuraShop.PedidoFacil.API.Data
 
             builder.Entity<ItemPedido>()
                 .HasOne(ip => ip.Item)
-                .WithMany(it => it.ItensPedidos)
+                .WithMany(i => i.ItensPedidos)
                 .HasForeignKey(ip => ip.ItemId);
 
             builder.Entity<ItemPedido>()
                 .HasOne(ip => ip.Pedido)
                 .WithMany(p => p.ItensPedidos)
                 .HasForeignKey(ip => ip.PedidoId);
+
         }
 
        

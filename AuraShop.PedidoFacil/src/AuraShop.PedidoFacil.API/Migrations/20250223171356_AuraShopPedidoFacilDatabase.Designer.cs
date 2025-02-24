@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AuraShop.PedidoFacil.API.Migrations
 {
     [DbContext(typeof(PedidoFacilContext))]
-    [Migration("20250222231015_CalculoDeValorTotal")]
-    partial class CalculoDeValorTotal
+    [Migration("20250223171356_AuraShopPedidoFacilDatabase")]
+    partial class AuraShopPedidoFacilDatabase
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -50,8 +50,10 @@ namespace AuraShop.PedidoFacil.API.Migrations
                         .IsRequired()
                         .HasColumnType("float");
 
-                    b.Property<int>("Tamanho")
-                        .HasColumnType("int");
+                    b.Property<string>("Tamanho")
+                        .IsRequired()
+                        .HasMaxLength(4)
+                        .HasColumnType("varchar(4)");
 
                     b.HasKey("Id");
 

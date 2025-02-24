@@ -8,7 +8,7 @@ namespace AuraShop.PedidoFacil.API.Data.Dtos
     {
         public int Id { get; set; }
         public string? Nome { get; set; }
-        public int Tamanho { get; set; }
+        public string? Tamanho { get; set; }
         public string? Cor { get; set; }
         public float? Preco { get; set; }
 

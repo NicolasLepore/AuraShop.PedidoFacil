@@ -1,9 +1,6 @@
-﻿using AuraShop.PedidoFacil.API.Data;
-using AuraShop.PedidoFacil.API.Data.Dtos;
-using AuraShop.PedidoFacil.API.Models;
-using AutoMapper;
+﻿using AuraShop.PedidoFacil.API.Data.Dtos;
+using AuraShop.PedidoFacil.API.Repositories.IRepositories;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace AuraShop.PedidoFacil.API.Controllers
 {
@@ -11,28 +8,20 @@ namespace AuraShop.PedidoFacil.API.Controllers
     [Route("/api/v1/[controller]")]
     public class ItemPedidoController : ControllerBase
     {
-        private readonly IMapper _mapper;
-        private readonly PedidoFacilContext _context;
+        private readonly IItemPedidoRepository _repo;
 
-        public ItemPedidoController(IMapper mapper, PedidoFacilContext context)
+        public ItemPedidoController(IItemPedidoRepository repo)
         {
-            _mapper = mapper;
-            _context = context;
+            _repo = repo;
         }
 
         [HttpPost]
         public IActionResult Create([FromBody] CreateItemPedidoDto dto)
         {
-            var itemPedido = _mapper.Map<ItemPedido>(dto);
+            var itemPedido = _repo.Add(dto);
 
-            _context.ItensPedidos.Add(itemPedido);
-            _context.SaveChanges();
-
-            //var pedido = _context.Pedidos.AsNoTracking().FirstOrDefault(p => p.Id == dto.PedidoId);
-
-            //Console.WriteLine(pedido.Nome);
-
-            //PRECISO CRIAR LOGO OS Repositories para fazer esse tipo de lógica!
+            //PRECISO CRIAR A LÓGICA PARA CALCULAR O TOTAL!
+            //FOCO EM PRECISÃO NO CÁLCULO, FLEXIBILIDADE DE CÓDIGO E DESEMPENHO COMPUTACIONAL
 
             return Created("", itemPedido);
            
@@ -41,9 +30,7 @@ namespace AuraShop.PedidoFacil.API.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var itensPedidos = _context.ItensPedidos.AsNoTracking().ToList();
-
-            var dto = _mapper.Map<IEnumerable<ReadItemPedidoDto>>(itensPedidos);
+            var dto = _repo.GetAll();
 
             return Ok(dto);
         }

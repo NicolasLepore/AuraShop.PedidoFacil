@@ -1,9 +1,6 @@
-﻿using AuraShop.PedidoFacil.API.Data;
-using AuraShop.PedidoFacil.API.Data.Dtos;
-using AuraShop.PedidoFacil.API.Models;
-using AutoMapper;
+﻿using AuraShop.PedidoFacil.API.Data.Dtos;
+using AuraShop.PedidoFacil.API.Repositories.IRepositories;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace AuraShop.PedidoFacil.API.Controllers
 {
@@ -11,22 +8,17 @@ namespace AuraShop.PedidoFacil.API.Controllers
     [Route("/api/v1/[controller]")]
     public class ItemController : ControllerBase
     {
-        private readonly IMapper _mapper;
-        private readonly PedidoFacilContext _context;
+        private IItemRepository _repo;
 
-        public ItemController(IMapper mapper, PedidoFacilContext context)
+        public ItemController(IItemRepository repo)
         {
-            _mapper = mapper;
-            _context = context;
+            _repo = repo;
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody] CreateItemDto dto)
+        public IActionResult Post([FromBody] CreateItemDto dto)
         {
-            var item = _mapper.Map<Item>(dto);
-
-            _context.Itens.Add(item);
-            _context.SaveChanges();
+            var item = _repo.Add(dto);
 
             return Created("", item);
         }
@@ -34,11 +26,29 @@ namespace AuraShop.PedidoFacil.API.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var itens = _context.Itens.AsNoTracking().ToList();  
-
-            var dto = _mapper.Map<IEnumerable<ReadItemDto>>(itens);
+            var dto = _repo.GetAll();
 
             return Ok(dto);
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
+        {
+            var dto = _repo.GetById(id);
+
+            if (dto is null) return NotFound();
+
+            return Ok(dto);
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            bool itemFound = _repo.Delete(id);
+
+            if (!itemFound) return NotFound();
+
+            return NoContent();
         }
 
     }

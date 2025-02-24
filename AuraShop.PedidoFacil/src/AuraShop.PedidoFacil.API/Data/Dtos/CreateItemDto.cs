@@ -11,8 +11,8 @@ namespace AuraShop.PedidoFacil.API.Data.Dtos
         public string? Nome { get; set; }
 
         [Required]
-        [Range(0, 50)]
-        public int Tamanho { get; set; }
+        [MaxLength(4)]
+        public string? Tamanho { get; set; }
 
         [Required]
         [MaxLength(15)]

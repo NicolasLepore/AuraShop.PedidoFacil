@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace AuraShop.PedidoFacil.API.Migrations
 {
     /// <inheritdoc />
-    public partial class DatabaseAuraShopPedidoFacil : Migration
+    public partial class AuraShopPedidoFacilDatabase : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -23,7 +23,8 @@ namespace AuraShop.PedidoFacil.API.Migrations
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Nome = table.Column<string>(type: "varchar(25)", maxLength: 25, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    Tamanho = table.Column<int>(type: "int", nullable: false),
+                    Tamanho = table.Column<string>(type: "varchar(4)", maxLength: 4, nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
                     Cor = table.Column<string>(type: "varchar(15)", maxLength: 15, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Preco = table.Column<float>(type: "float", nullable: false)
@@ -45,7 +46,8 @@ namespace AuraShop.PedidoFacil.API.Migrations
                     Pago = table.Column<bool>(type: "tinyint(1)", nullable: false),
                     Entregue = table.Column<bool>(type: "tinyint(1)", nullable: false),
                     DataPedido = table.Column<DateTime>(type: "datetime(6)", nullable: false),
-                    DataEntrega = table.Column<DateTime>(type: "datetime(6)", nullable: true)
+                    DataEntrega = table.Column<DateTime>(type: "datetime(6)", nullable: true),
+                    ValorTotal = table.Column<float>(type: "float", nullable: true)
                 },
                 constraints: table =>
                 {

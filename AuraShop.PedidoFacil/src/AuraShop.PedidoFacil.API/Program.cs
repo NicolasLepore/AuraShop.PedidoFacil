@@ -1,4 +1,6 @@
 using AuraShop.PedidoFacil.API.Data;
+using AuraShop.PedidoFacil.API.Repositories;
+using AuraShop.PedidoFacil.API.Repositories.IRepositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,7 +21,10 @@ builder.Services.AddDbContext<PedidoFacilContext>(opt =>
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-builder.Services.AddScoped<PedidoFacilContext>();
+// Dependencias
+builder.Services.AddScoped<IItemRepository, ItemRepository>();
+builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
+builder.Services.AddScoped<IItemPedidoRepository, ItemPedidoRepository>();
 
 builder.Services.AddCors();
 
@@ -36,11 +41,11 @@ app.UseHttpsRedirection();
 
 app.UseCors(c =>
 {
-    c.AllowAnyHeader();
-    c.AllowAnyMethod();
-    c.AllowAnyOrigin();
+    c.WithOrigins("http://127.0.0.1:5500")
+        .AllowAnyHeader()
+        .AllowAnyMethod()
+        .AllowCredentials();
 });
-
 
 app.UseAuthorization();
 app.MapControllers();

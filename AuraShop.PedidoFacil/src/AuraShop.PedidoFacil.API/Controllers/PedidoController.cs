@@ -1,9 +1,6 @@
-﻿using AuraShop.PedidoFacil.API.Data;
-using AuraShop.PedidoFacil.API.Data.Dtos;
-using AuraShop.PedidoFacil.API.Models;
-using AutoMapper;
+﻿using AuraShop.PedidoFacil.API.Data.Dtos;
+using AuraShop.PedidoFacil.API.Repositories.IRepositories;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace AuraShop.PedidoFacil.API.Controllers
 {
@@ -11,21 +8,16 @@ namespace AuraShop.PedidoFacil.API.Controllers
     [Route("/api/v1/[controller]")]
     public class PedidoController : ControllerBase
     {
-        private readonly IMapper _mapper;
-        private readonly PedidoFacilContext _context;
-        public PedidoController(IMapper mapper, PedidoFacilContext context)
+        private readonly IPedidoRepository _repo;
+        public PedidoController(IPedidoRepository repo)
         {
-            _mapper = mapper;
-            _context = context;
+            _repo = repo;
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody]CreatePedidoDto dto)
+        public IActionResult Create([FromBody] CreatePedidoDto dto)
         {
-            var pedido = _mapper.Map<Pedido>(dto);
-
-            _context.Pedidos.Add(pedido);
-            _context.SaveChanges();
+            var pedido = _repo.Add(dto);
 
             return Created("", pedido);
         }
@@ -33,8 +25,17 @@ namespace AuraShop.PedidoFacil.API.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var pedidos = _context.Pedidos.AsNoTracking().ToList();
-            var dto = _mapper.Map<IEnumerable<ReadPedidoDto>>(pedidos);
+            var dto = _repo.GetAll();
+
+            return Ok(dto);
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
+        {
+            var dto = _repo.GetById(id);
+
+            if (dto is null) return NotFound();
 
             return Ok(dto);
         }

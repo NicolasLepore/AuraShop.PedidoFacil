@@ -1,5 +1,6 @@
 ﻿using AuraShop.PedidoFacil.Application.Dtos;
 using AuraShop.PedidoFacil.Application.IRepositories;
+using AuraShop.PedidoFacil.Application.UseCases;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AuraShop.PedidoFacil.API.Controllers
@@ -9,19 +10,18 @@ namespace AuraShop.PedidoFacil.API.Controllers
     public class ItemPedidoController : ControllerBase
     {
         private readonly IItemPedidoRepository _repo;
+        private readonly CreateItemPedidoUseCase _createUseCase;
 
-        public ItemPedidoController(IItemPedidoRepository repo)
+        public ItemPedidoController(IItemPedidoRepository repo, CreateItemPedidoUseCase createUseCase)
         {
             _repo = repo;
+            _createUseCase = createUseCase;
         }
 
         [HttpPost]
         public IActionResult Create([FromBody] CreateItemPedidoDto dto)
         {
-            var itemPedido = _repo.Add(dto);
-
-            //PRECISO CRIAR A LÓGICA PARA CALCULAR O TOTAL!
-            //FOCO EM PRECISÃO NO CÁLCULO, FLEXIBILIDADE DE CÓDIGO E DESEMPENHO COMPUTACIONAL
+            var itemPedido = _createUseCase.Execute(dto);
 
             return Created("", itemPedido);
            

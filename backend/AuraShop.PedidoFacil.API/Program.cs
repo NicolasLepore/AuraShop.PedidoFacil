@@ -1,4 +1,6 @@
 using AuraShop.PedidoFacil.Application.IRepositories;
+using AuraShop.PedidoFacil.Application.Services;
+using AuraShop.PedidoFacil.Application.UseCases;
 using AuraShop.PedidoFacil.Infra.Data;
 using AuraShop.PedidoFacil.Infra.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -25,6 +27,9 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<IItemRepository, ItemRepository>();
 builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
 builder.Services.AddScoped<IItemPedidoRepository, ItemPedidoRepository>();
+
+builder.Services.AddScoped<FaturaService>();
+builder.Services.AddScoped<CreateItemPedidoUseCase>();
 
 builder.Services.AddCors();
 

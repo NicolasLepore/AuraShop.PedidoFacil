@@ -45,6 +45,21 @@ namespace AuraShop.PedidoFacil.Infra.Repositories
             return dto;
         }
 
+        public ReadItemDto GetByNameAndSize(string name, string size)
+        {
+            string normalizedName = name.ToUpper();
+            string normalizedSize = size.ToUpper();
+
+            var item = _context.Itens.FirstOrDefault
+            (i =>
+                i.Nome!.ToUpper().Equals(normalizedName) && 
+                i.Tamanho!.ToUpper().Equals(normalizedSize)
+            );
+
+            var dto = _mapper.Map<ReadItemDto>(item);
+            return dto;
+        }
+
         public bool Delete(int id)
         {
             var item = _context.Itens.FirstOrDefault(i => i.Id == id);

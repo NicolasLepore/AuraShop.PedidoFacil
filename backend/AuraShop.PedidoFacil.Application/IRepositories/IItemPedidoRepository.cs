@@ -7,5 +7,6 @@ namespace AuraShop.PedidoFacil.Application.IRepositories
     {
         ItemPedido Add(CreateItemPedidoDto dto);
         IEnumerable<ReadItemPedidoDto> GetAll();
+        float GetItemPriceFromItemPedido(int pedidoId, int itemId);
     }
 }

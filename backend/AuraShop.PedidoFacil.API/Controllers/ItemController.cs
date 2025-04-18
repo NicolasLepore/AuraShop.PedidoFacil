@@ -41,6 +41,23 @@ namespace AuraShop.PedidoFacil.API.Controllers
             return Ok(dto);
         }
 
+        [HttpGet("{name}/{size}")]
+        public IActionResult GetByNameAndSize(string name, string size)
+        {
+            var dto = _repo.GetByNameAndSize(name, size);
+
+            if(dto is null)
+            {
+                return NotFound
+                (
+                    new { StatusCode = StatusCodes.Status404NotFound, ErrorMessage = "Item não encontrado por esse nome e tamanho" }
+                );
+            }
+                
+
+            return Ok(dto);
+        }
+
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuraShop.PedidoFacil.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fcf56ec3dc39d4bc1373bfb68f5648fca98895b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60372f243c94746e716889a2a90d118b55e41b74")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuraShop.PedidoFacil.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuraShop.PedidoFacil.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -10,6 +10,7 @@ namespace AuraShop.PedidoFacil.Infra.Data
         public DbSet<Item> Itens { get; set; }
         public DbSet<Pedido> Pedidos { get; set; }
         public DbSet<ItemPedido> ItensPedidos { get; set; }
+        //public DbSet<Fatura> Faturas { get; set; }  
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

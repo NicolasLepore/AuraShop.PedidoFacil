@@ -16,9 +16,6 @@ namespace AuraShop.PedidoFacil.Domain.Models
         public string? Nome { get; set; }
 
         [Required]
-        public bool Pago { get; set; } = false;
-
-        [Required]
         public bool Entregue { get; set; } = false;
 
         [Required]
@@ -27,17 +24,8 @@ namespace AuraShop.PedidoFacil.Domain.Models
         [AllowNull]
         public DateTime? DataEntrega { get; set; } = null;
 
-        public float? ValorTotal { get; set; }
+        //public virtual Fatura? Fatura { get; set; }
 
         public virtual ICollection<ItemPedido>? ItensPedidos { get; set; }
-
-        public void CalcularValorTotal()
-        {
-            foreach (var itemPedido in ItensPedidos)
-            {
-                ValorTotal = ValorTotal +
-                    itemPedido.Quantidade * itemPedido.Item!.Preco;
-            }
-        }
     }
 }

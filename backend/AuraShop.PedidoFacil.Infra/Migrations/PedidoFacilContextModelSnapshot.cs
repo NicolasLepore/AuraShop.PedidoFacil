@@ -49,8 +49,8 @@ namespace AuraShop.PedidoFacil.API.Migrations
 
                     b.Property<string>("Tamanho")
                         .IsRequired()
-                        .HasMaxLength(4)
-                        .HasColumnType("varchar(4)");
+                        .HasMaxLength(10)
+                        .HasColumnType("varchar(10)");
 
                     b.HasKey("Id");
 
@@ -95,12 +95,6 @@ namespace AuraShop.PedidoFacil.API.Migrations
                     b.Property<string>("Nome")
                         .HasMaxLength(25)
                         .HasColumnType("varchar(25)");
-
-                    b.Property<bool>("Pago")
-                        .HasColumnType("tinyint(1)");
-
-                    b.Property<float?>("ValorTotal")
-                        .HasColumnType("float");
 
                     b.HasKey("Id");
 

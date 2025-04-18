@@ -15,7 +15,7 @@ namespace AuraShop.PedidoFacil.Domain.Models
         public string? Nome { get; set; }
 
         [Required]
-        [MaxLength(4)]
+        [MaxLength(10)]
         public string? Tamanho { get; set; }
 
         [Required]

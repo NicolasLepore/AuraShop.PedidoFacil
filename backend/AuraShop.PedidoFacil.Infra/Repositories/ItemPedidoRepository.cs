@@ -23,6 +23,7 @@ namespace AuraShop.PedidoFacil.Infra.Repositories
             var itemPedido = _mapper.Map<ItemPedido>(dto);
 
             _context.ItensPedidos.Add(itemPedido);
+            
             _context.SaveChanges();
 
             return itemPedido;
@@ -36,6 +37,16 @@ namespace AuraShop.PedidoFacil.Infra.Repositories
             var dto = _mapper.Map<IEnumerable<ReadItemPedidoDto>>(itensPedidos);
 
             return dto;
+        }
+
+        public float GetItemPriceFromItemPedido(int pedidoId, int itemId)
+        {
+            float valor = (float)_context.ItensPedidos
+                .AsNoTracking()
+                .Where(ip => ip.PedidoId == pedidoId && ip.ItemId == itemId)
+                .Select(ip => ip.Item!.Preco).FirstOrDefault()!;
+
+            return valor;
         }
     }
 }

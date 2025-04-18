@@ -8,6 +8,8 @@ namespace AuraShop.PedidoFacil.Application.IRepositories
         Item Add(CreateItemDto dto);
         IEnumerable<ReadItemDto> GetAll();
         ReadItemDto GetById(int id);
+        ReadItemDto GetByNameAndSize(string name, string size);
         bool Delete(int id);
+
     }
 }

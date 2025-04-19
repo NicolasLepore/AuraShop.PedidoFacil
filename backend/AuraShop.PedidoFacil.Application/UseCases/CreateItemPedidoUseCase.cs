@@ -1,5 +1,6 @@
 ﻿using AuraShop.PedidoFacil.Application.Dtos;
 using AuraShop.PedidoFacil.Application.IRepositories;
+using AuraShop.PedidoFacil.Application.Models;
 using AuraShop.PedidoFacil.Application.Services;
 using AuraShop.PedidoFacil.Domain.Models;
 
@@ -7,21 +8,28 @@ namespace AuraShop.PedidoFacil.Application.UseCases;
 public class CreateItemPedidoUseCase
 {
     private readonly FaturaService _faturaService;
-    private readonly IItemPedidoRepository _repo;
+    private readonly IItemPedidoRepository _repoItemPedido;
+    private readonly IPedidoRepository _repoPedido;
 
-    public CreateItemPedidoUseCase(FaturaService faturaService, IItemPedidoRepository repo)
+    public CreateItemPedidoUseCase(FaturaService faturaService, IItemPedidoRepository repoItemPedido, IPedidoRepository repoPedido)
     {
         _faturaService = faturaService;
-        _repo = repo;
+        _repoItemPedido = repoItemPedido;
+        _repoPedido = repoPedido;
     }
 
     public ItemPedido Execute(CreateItemPedidoDto dto)
     {
-        var itemPedido = _repo.Add(dto);
+        // Adiciona no banco
+        var itemPedido = _repoItemPedido.Add(dto);
 
-        float precoItem = _repo.GetItemPriceFromItemPedido(itemPedido.PedidoId, itemPedido.ItemId);
+        // Busca o mesmo objeto de ItemPedido no Banco e retorna o DTO para calculo da fatura.
+        var itemPedidoDto = _repoItemPedido.GetPriceAndAmountFromItens(itemPedido.PedidoId, itemPedido.ItemId);
 
-        _faturaService.CalcularValorTotal(precoItem);
+        // Buscando o pedido para alteração na Fatura.
+        var pedido = _repoPedido.GetById(itemPedido.PedidoId);
+
+        _faturaService.CalcularValorTotal(itemPedidoDto, pedido);
 
         return itemPedido;
     }

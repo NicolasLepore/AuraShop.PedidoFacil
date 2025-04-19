@@ -1,9 +1,11 @@
 ﻿using AuraShop.PedidoFacil.Application.Dtos;
 using AuraShop.PedidoFacil.Application.IRepositories;
+using AuraShop.PedidoFacil.Application.Models;
 using AuraShop.PedidoFacil.Domain.Models;
 using AuraShop.PedidoFacil.Infra.Data;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace AuraShop.PedidoFacil.Infra.Repositories
 {
@@ -39,14 +41,21 @@ namespace AuraShop.PedidoFacil.Infra.Repositories
             return dto;
         }
 
-        public float GetItemPriceFromItemPedido(int pedidoId, int itemId)
+        public ItemPedidoCalculationDto GetPriceAndAmountFromItens(int pedidoId, int itemId)
         {
-            float valor = (float)_context.ItensPedidos
+            var props = _context.ItensPedidos
                 .AsNoTracking()
                 .Where(ip => ip.PedidoId == pedidoId && ip.ItemId == itemId)
-                .Select(ip => ip.Item!.Preco).FirstOrDefault()!;
+                .Select(ip => new
+                {
+                    ip.Item!.Preco,
+                    ip.Quantidade
+                })
+                .FirstOrDefault();
 
-            return valor;
+            var dto = new ItemPedidoCalculationDto(props!.Preco ?? 0f, props.Quantidade);
+
+            return dto;
         }
     }
 }

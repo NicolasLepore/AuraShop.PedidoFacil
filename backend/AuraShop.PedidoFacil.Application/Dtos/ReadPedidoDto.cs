@@ -9,7 +9,7 @@ namespace AuraShop.PedidoFacil.Application.Dtos
         public bool Entregue { get; set; } = false;
         public DateTime DataPedido { get; set; }
         public DateTime DataEntrega { get; set; }
-        //public Fatura? Fatura { get; set; }
+        public ReadFaturaDto? Fatura { get; set; }
         public ICollection<ReadItemPedidoDto>? ItensPedidos { get; set; }
     }
 }

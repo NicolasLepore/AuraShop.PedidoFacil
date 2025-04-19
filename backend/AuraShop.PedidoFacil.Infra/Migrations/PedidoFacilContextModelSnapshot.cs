@@ -25,6 +25,37 @@ namespace AuraShop.PedidoFacil.API.Migrations
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
+            modelBuilder.Entity("AuraShop.PedidoFacil.Domain.Models.Fatura", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("ConfirmacaoPagamentoCliente")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<bool>("ConfirmacaoPagamentoFornecedor")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<DateTime?>("DataDePagamento")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("PedidoId")
+                        .HasColumnType("int");
+
+                    b.Property<double>("ValorTotal")
+                        .HasColumnType("double");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PedidoId")
+                        .IsUnique();
+
+                    b.ToTable("Faturas");
+                });
+
             modelBuilder.Entity("AuraShop.PedidoFacil.Domain.Models.Item", b =>
                 {
                     b.Property<int>("Id")
@@ -101,6 +132,17 @@ namespace AuraShop.PedidoFacil.API.Migrations
                     b.ToTable("Pedidos");
                 });
 
+            modelBuilder.Entity("AuraShop.PedidoFacil.Domain.Models.Fatura", b =>
+                {
+                    b.HasOne("AuraShop.PedidoFacil.Domain.Models.Pedido", "Pedido")
+                        .WithOne("Fatura")
+                        .HasForeignKey("AuraShop.PedidoFacil.Domain.Models.Fatura", "PedidoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Pedido");
+                });
+
             modelBuilder.Entity("AuraShop.PedidoFacil.Domain.Models.ItemPedido", b =>
                 {
                     b.HasOne("AuraShop.PedidoFacil.Domain.Models.Item", "Item")
@@ -127,6 +169,8 @@ namespace AuraShop.PedidoFacil.API.Migrations
 
             modelBuilder.Entity("AuraShop.PedidoFacil.Domain.Models.Pedido", b =>
                 {
+                    b.Navigation("Fatura");
+
                     b.Navigation("ItensPedidos");
                 });
 #pragma warning restore 612, 618

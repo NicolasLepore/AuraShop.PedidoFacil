@@ -8,5 +8,7 @@ namespace AuraShop.PedidoFacil.Application.IRepositories
         Pedido Add(CreatePedidoDto dto);
         IEnumerable<ReadPedidoDto> GetAll();
         ReadPedidoDto GetById(int id);
+        void CreateFatura(int pedidoId);
+        public bool UpdateFaturaFromPedido(int pedidoId, double valorTotal);
     }
 }

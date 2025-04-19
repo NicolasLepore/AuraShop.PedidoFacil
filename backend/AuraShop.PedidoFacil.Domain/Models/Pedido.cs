@@ -24,7 +24,7 @@ namespace AuraShop.PedidoFacil.Domain.Models
         [AllowNull]
         public DateTime? DataEntrega { get; set; } = null;
 
-        //public virtual Fatura? Fatura { get; set; }
+        public virtual Fatura? Fatura { get; set; }
 
         public virtual ICollection<ItemPedido>? ItensPedidos { get; set; }
     }

@@ -1,5 +1,6 @@
 ﻿using AuraShop.PedidoFacil.Application.Dtos;
 using AuraShop.PedidoFacil.Application.IRepositories;
+using AuraShop.PedidoFacil.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AuraShop.PedidoFacil.API.Controllers
@@ -18,6 +19,7 @@ namespace AuraShop.PedidoFacil.API.Controllers
         public IActionResult Create([FromBody] CreatePedidoDto dto)
         {
             var pedido = _repo.Add(dto);
+            _repo.CreateFatura(pedido.Id);
 
             return Created("", pedido);
         }

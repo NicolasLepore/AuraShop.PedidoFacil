@@ -10,7 +10,7 @@ namespace AuraShop.PedidoFacil.Infra.Data
         public DbSet<Item> Itens { get; set; }
         public DbSet<Pedido> Pedidos { get; set; }
         public DbSet<ItemPedido> ItensPedidos { get; set; }
-        //public DbSet<Fatura> Faturas { get; set; }  
+        public DbSet<Fatura> Faturas { get; set; }  
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -28,6 +28,10 @@ namespace AuraShop.PedidoFacil.Infra.Data
                 .HasOne(ip => ip.Pedido)
                 .WithMany(p => p.ItensPedidos)
                 .HasForeignKey(ip => ip.PedidoId);
+
+            builder.Entity<Pedido>()
+                .HasOne(p => p.Fatura)
+                .WithOne(f => f.Pedido);
 
         }
 

@@ -1,10 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace AuraShop.PedidoFacil.Domain.Models
 {
     public class Fatura
     {
+
         [Required]
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -18,12 +20,12 @@ namespace AuraShop.PedidoFacil.Domain.Models
 
         [Required]
         public bool ConfirmacaoPagamentoFornecedor { get; set; } = false;
+        public DateTime? DataDePagamento { get; set; } = null;
 
         [Required]
         public int PedidoId { get; set; }
 
-        [Required]
-        public DateTime DataDePagamento { get; set; }
+        [JsonIgnore]
         public virtual Pedido? Pedido { get; set; }
     }
 }

@@ -10,7 +10,9 @@ namespace AuraShop.PedidoFacil.Infra.Profiles
         {
             CreateMap<Pedido, ReadPedidoDto>()
                 .ForMember(dto => dto.ItensPedidos, opt =>
-                    opt.MapFrom(pedido => pedido.ItensPedidos));
+                    opt.MapFrom(pedido => pedido.ItensPedidos))
+                .ForMember(dto => dto.Fatura, opt =>
+                    opt.MapFrom(pedido => pedido.Fatura));
 
             CreateMap<CreatePedidoDto, Pedido>();
         }

@@ -1,4 +1,5 @@
 ﻿using AuraShop.PedidoFacil.Application.Dtos;
+using AuraShop.PedidoFacil.Application.Models;
 using AuraShop.PedidoFacil.Domain.Models;
 
 namespace AuraShop.PedidoFacil.Application.IRepositories
@@ -7,6 +8,6 @@ namespace AuraShop.PedidoFacil.Application.IRepositories
     {
         ItemPedido Add(CreateItemPedidoDto dto);
         IEnumerable<ReadItemPedidoDto> GetAll();
-        float GetItemPriceFromItemPedido(int pedidoId, int itemId);
+        ItemPedidoCalculationDto GetPriceAndAmountFromItens(int pedidoId, int itemId);
     }
 }

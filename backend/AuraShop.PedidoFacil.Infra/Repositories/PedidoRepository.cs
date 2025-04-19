@@ -41,8 +41,32 @@ namespace AuraShop.PedidoFacil.Infra.Repositories
             var pedido = _context.Pedidos.AsNoTracking().FirstOrDefault(p => p.Id == id);
 
             var dto = _mapper.Map<ReadPedidoDto>(pedido);
-
+           
             return dto;
+        }
+
+        public void CreateFatura(int pedidoId)  
+        {
+            var dto = new CreateFaturaDto(pedidoId);
+            
+            var fatura = _mapper.Map<Fatura>(dto);
+
+            _context.Faturas.Add(fatura);
+            _context.SaveChanges();
+        }
+
+        public bool UpdateFaturaFromPedido(int pedidoId, double valorTotal)
+        {
+            var pedido = _context.Pedidos.FirstOrDefault(p => p.Id == pedidoId);
+
+            if (pedido is null) return false;
+
+            valorTotal = Math.Round(valorTotal, 2);
+
+            pedido.Fatura!.ValorTotal += valorTotal;
+            _context.SaveChanges();
+
+            return true;
         }
     }
 }

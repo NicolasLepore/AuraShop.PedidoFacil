@@ -1,6 +1,7 @@
 ﻿using AuraShop.PedidoFacil.Application.Dtos;
 using AuraShop.PedidoFacil.Application.IRepositories;
 using AuraShop.PedidoFacil.Application.UseCases;
+using AuraShop.PedidoFacil.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AuraShop.PedidoFacil.API.Controllers
@@ -19,6 +20,9 @@ namespace AuraShop.PedidoFacil.API.Controllers
         }
 
         [HttpPost]
+        [ProducesResponseType(typeof(ItemPedido), StatusCodes.Status201Created)]
+        [ProducesResponseType
+            (typeof(BadRequestResult), StatusCodes.Status400BadRequest)]
         public IActionResult Create([FromBody] CreateItemPedidoDto dto)
         {
             var itemPedido = _createUseCase.Execute(dto);
@@ -28,6 +32,8 @@ namespace AuraShop.PedidoFacil.API.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType
+            (typeof(IEnumerable<ReadItemPedidoDto>), StatusCodes.Status200OK)]
         public IActionResult Get()
         {
             var dto = _repo.GetAll();

@@ -25,18 +25,26 @@ export class FormComponent {
     };
     
     try {
-      const request = await fetch(this.url, {
+      const response = await fetch(this.url, {
         method: "POST",
         headers: {
           "Content-Type": "Application/json"
         },
         body: JSON.stringify(data)
       });
-  
-      const response = await request.json();
+      
+      console.log(response);
+
+      if(response.status != 201) {
+        alert(`Erro ao enviar dados: Status ${response.status}`);
+        return;
+      }
+
+      const result = await response.json();
       this.router.navigate(['/success']);
 
-    } catch(error) {
+    } 
+    catch(error) {
       alert("Erro ao cadastrar produto");
     }
     

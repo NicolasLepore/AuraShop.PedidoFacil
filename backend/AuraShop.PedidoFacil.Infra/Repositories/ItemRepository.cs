@@ -60,6 +60,17 @@ namespace AuraShop.PedidoFacil.Infra.Repositories
             return dto;
         }
 
+        public bool Update(int id, UpdateItemDto dto)
+        {
+            var item = _context.Itens.FirstOrDefault(i => i.Id == id);
+
+            if (item is null) return false;
+
+            _mapper.Map(dto, item);
+            _context.SaveChanges();
+
+            return true;
+        }
         public bool Delete(int id)
         {
             var item = _context.Itens.FirstOrDefault(i => i.Id == id);

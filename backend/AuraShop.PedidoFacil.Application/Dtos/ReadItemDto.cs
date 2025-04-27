@@ -1,4 +1,6 @@
-﻿namespace AuraShop.PedidoFacil.Application.Dtos
+﻿using AuraShop.PedidoFacil.Domain.Models;
+
+namespace AuraShop.PedidoFacil.Application.Dtos
 {
     public class ReadItemDto
     {

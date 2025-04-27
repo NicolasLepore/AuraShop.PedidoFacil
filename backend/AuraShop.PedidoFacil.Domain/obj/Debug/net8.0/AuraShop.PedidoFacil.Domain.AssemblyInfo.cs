@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuraShop.PedidoFacil.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+175782ed307f592989d454eb025c300acc740e1f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbb34cbd952be2fc7c456170844583a8531df41a")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuraShop.PedidoFacil.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuraShop.PedidoFacil.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

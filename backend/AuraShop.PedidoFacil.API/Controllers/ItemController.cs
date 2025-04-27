@@ -1,5 +1,6 @@
 ﻿using AuraShop.PedidoFacil.Application.Dtos;
 using AuraShop.PedidoFacil.Application.IRepositories;
+using AuraShop.PedidoFacil.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AuraShop.PedidoFacil.API.Controllers
@@ -16,6 +17,8 @@ namespace AuraShop.PedidoFacil.API.Controllers
         }
 
         [HttpPost]
+        [ProducesResponseType(typeof(Item), StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public IActionResult Post([FromBody] CreateItemDto dto)
         {
             var item = _repo.Add(dto);
@@ -24,6 +27,7 @@ namespace AuraShop.PedidoFacil.API.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType(typeof(IEnumerable<ReadItemDto>), StatusCodes.Status200OK)]
         public IActionResult Get()
         {
             var dto = _repo.GetAll();
@@ -32,6 +36,9 @@ namespace AuraShop.PedidoFacil.API.Controllers
         }
 
         [HttpGet("{id}")]
+        [ProducesResponseType(typeof(ReadItemDto), StatusCodes.Status200OK)]
+        [ProducesResponseType
+            (typeof(NotFoundResult), StatusCodes.Status404NotFound)]
         public IActionResult GetById(int id)
         {
             var dto = _repo.GetById(id);
@@ -42,23 +49,45 @@ namespace AuraShop.PedidoFacil.API.Controllers
         }
 
         [HttpGet("{name}/{size}")]
+        [ProducesResponseType(typeof(ReadItemDto), StatusCodes.Status200OK)]
+        [ProducesResponseType
+            (typeof(NotFoundResult), StatusCodes.Status404NotFound)]
         public IActionResult GetByNameAndSize(string name, string size)
         {
             var dto = _repo.GetByNameAndSize(name, size);
 
-            if(dto is null)
+            if (dto is null)
             {
                 return NotFound
                 (
                     new { StatusCode = StatusCodes.Status404NotFound, ErrorMessage = "Item não encontrado por esse nome e tamanho" }
                 );
             }
-                
+
 
             return Ok(dto);
         }
 
+        [HttpPut("{id}")]
+        [ProducesResponseType
+            (typeof(NoContentResult), StatusCodes.Status204NoContent)]
+        [ProducesResponseType
+            (typeof(NotFoundResult), StatusCodes.Status404NotFound)]
+        public IActionResult Update(int id, [FromBody] UpdateItemDto dto)
+        {
+            var success = _repo.Update(id, dto);
+
+            if (!success) return NotFound();
+
+            return NoContent();
+
+        }
+
         [HttpDelete("{id}")]
+        [ProducesResponseType
+            (typeof(NoContentResult), StatusCodes.Status204NoContent)]
+        [ProducesResponseType
+            (typeof(NotFoundResult), StatusCodes.Status404NotFound)]
         public IActionResult Delete(int id)
         {
             bool itemFound = _repo.Delete(id);

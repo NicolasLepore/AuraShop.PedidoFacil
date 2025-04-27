@@ -11,6 +11,8 @@ namespace AuraShop.PedidoFacil.Infra.Profiles
             CreateMap<Item, ReadItemDto>();
 
             CreateMap<CreateItemDto, Item>();
+
+            CreateMap<UpdateItemDto, Item>();
         }
     }
 }

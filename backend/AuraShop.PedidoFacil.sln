@@ -5,11 +5,13 @@ VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuraShop.PedidoFacil.API", "AuraShop.PedidoFacil.API\AuraShop.PedidoFacil.API.csproj", "{C79CBC21-8FC7-48F0-BBC1-39506AC42506}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuraShop.PedidoFacil.Domain", "AuraShop.PedidoFacil.Domain\AuraShop.PedidoFacil.Domain.csproj", "{946DD0F1-CB6D-42F3-893F-2ADA57BF1F79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuraShop.PedidoFacil.Domain", "AuraShop.PedidoFacil.Domain\AuraShop.PedidoFacil.Domain.csproj", "{946DD0F1-CB6D-42F3-893F-2ADA57BF1F79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuraShop.PedidoFacil.Application", "AuraShop.PedidoFacil.Application\AuraShop.PedidoFacil.Application.csproj", "{A67CA44E-9F0C-43E2-B65D-C35EF035CA90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuraShop.PedidoFacil.Application", "AuraShop.PedidoFacil.Application\AuraShop.PedidoFacil.Application.csproj", "{A67CA44E-9F0C-43E2-B65D-C35EF035CA90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuraShop.PedidoFacil.Infra", "AuraShop.PedidoFacil.Infra\AuraShop.PedidoFacil.Infra.csproj", "{0AE48674-4BE8-4F0B-BD8B-F459FCFE1C44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuraShop.PedidoFacil.Infra", "AuraShop.PedidoFacil.Infra\AuraShop.PedidoFacil.Infra.csproj", "{0AE48674-4BE8-4F0B-BD8B-F459FCFE1C44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuraShop.PedidoFacil.Tests", "AuraShop.PedidoFacil.Tests\AuraShop.PedidoFacil.Tests.csproj", "{CB0683E4-B600-45A8-8432-80804B6A2116}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{0AE48674-4BE8-4F0B-BD8B-F459FCFE1C44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AE48674-4BE8-4F0B-BD8B-F459FCFE1C44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AE48674-4BE8-4F0B-BD8B-F459FCFE1C44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB0683E4-B600-45A8-8432-80804B6A2116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB0683E4-B600-45A8-8432-80804B6A2116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB0683E4-B600-45A8-8432-80804B6A2116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB0683E4-B600-45A8-8432-80804B6A2116}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

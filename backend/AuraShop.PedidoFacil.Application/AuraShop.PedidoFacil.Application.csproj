@@ -10,4 +10,8 @@
     <ProjectReference Include="..\AuraShop.PedidoFacil.Domain\AuraShop.PedidoFacil.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Dtos\Response\" />
+  </ItemGroup>
+
 </Project>

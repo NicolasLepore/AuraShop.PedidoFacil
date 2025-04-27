@@ -5,7 +5,7 @@ namespace AuraShop.PedidoFacil.Infra.Data
 {
     public class PedidoFacilContext : DbContext
     {
-        public PedidoFacilContext(DbContextOptions opt) : base(opt) { }
+        public PedidoFacilContext(DbContextOptions<PedidoFacilContext> opt) : base(opt) { }
 
         public DbSet<Item> Itens { get; set; }
         public DbSet<Pedido> Pedidos { get; set; }

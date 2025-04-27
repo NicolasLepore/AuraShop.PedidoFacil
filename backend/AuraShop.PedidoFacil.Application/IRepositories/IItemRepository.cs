@@ -9,6 +9,7 @@ namespace AuraShop.PedidoFacil.Application.IRepositories
         IEnumerable<ReadItemDto> GetAll();
         ReadItemDto GetById(int id);
         ReadItemDto GetByNameAndSize(string name, string size);
+        bool Update(int id, UpdateItemDto dto);
         bool Delete(int id);
 
     }

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AuraShop.PedidoFacil.Application/1.0.0": {
+        "dependencies": {
+          "AuraShop.PedidoFacil.Domain": "1.0.0"
+        },
+        "runtime": {
+          "AuraShop.PedidoFacil.Application.dll": {}
+        }
+      },
+      "AuraShop.PedidoFacil.Domain/1.0.0": {
+        "runtime": {
+          "AuraShop.PedidoFacil.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AuraShop.PedidoFacil.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AuraShop.PedidoFacil.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

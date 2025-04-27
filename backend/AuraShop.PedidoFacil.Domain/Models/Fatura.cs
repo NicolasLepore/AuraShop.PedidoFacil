@@ -6,7 +6,6 @@ namespace AuraShop.PedidoFacil.Domain.Models
 {
     public class Fatura
     {
-
         [Required]
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

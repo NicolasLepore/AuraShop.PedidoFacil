@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'AuraShop.PedidoFacil.Frontend' title`, () => {
+  it(`should have the 'AuraShop.PedidoFacil.Web' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('AuraShop.PedidoFacil.Frontend');
+    expect(app.title).toEqual('AuraShop.PedidoFacil.Web');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, AuraShop.PedidoFacil.Frontend');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, AuraShop.PedidoFacil.Web');
   });
 });

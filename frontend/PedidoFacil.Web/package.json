@@ -1,5 +1,5 @@
 {
-  "name": "aura-shop.pedido-facil.frontend",
+  "name": "aura-shop.pedido-facil.web",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

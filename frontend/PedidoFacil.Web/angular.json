@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AuraShop.PedidoFacil.Frontend": {
+    "AuraShop.PedidoFacil.Web": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/aura-shop.pedido-facil.frontend",
+            "outputPath": "dist/aura-shop.pedido-facil.web",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "AuraShop.PedidoFacil.Frontend:build:production"
+              "buildTarget": "AuraShop.PedidoFacil.Web:build:production"
             },
             "development": {
-              "buildTarget": "AuraShop.PedidoFacil.Frontend:build:development"
+              "buildTarget": "AuraShop.PedidoFacil.Web:build:development"
             }
           },
           "defaultConfiguration": "development"

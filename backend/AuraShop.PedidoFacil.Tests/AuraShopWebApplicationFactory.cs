@@ -13,27 +13,15 @@ public class AuraShopWebApplicationFactory : WebApplicationFactory<Program>
         builder.ConfigureServices(services =>
         {
             // Preciso ver como criar banco de testes para esse caso. Talvez usar o docker - se for usar docker reveja no curso
-            string conn = "server=localhost;user=root;password=root;database=AuraShopPedidoFacilTests;";
-
+            string conn = "CONNECTION-STRING-TESTS";
             services.RemoveAll(typeof(DbContextOptions<PedidoFacilContext>));
             services.AddDbContext<PedidoFacilContext>(opt =>
             {
                 opt.UseLazyLoadingProxies()
                     .UseMySql(conn, ServerVersion.AutoDetect(conn));
-
             });
-
-            var provider = services.BuildServiceProvider();
-            using(var scope = provider.CreateScope())
-            {
-                var context = scope.ServiceProvider.GetRequiredService<PedidoFacilContext>();
-
-                context.Database.Migrate();
-            }
-
         });
 
         base.ConfigureWebHost(builder);
-        
     }
 }

@@ -23,9 +23,8 @@ public class CreateItemPedidoUseCase
         var itemPedido = _repoItemPedido.Add(dto);
 
         // Busca o mesmo objeto de ItemPedido no Banco e retorna o DTO para calculo da fatura.
-        var itemPedidoDto = _repoItemPedido
-            .GetPriceAndAmountFromItens(itemPedido.PedidoId, itemPedido.ItemId);
-        
+        var itemPedidoDto = _repoItemPedido.GetPriceAndAmountFromItens(itemPedido.PedidoId, itemPedido.ItemId);
+
         // Buscando o pedido para alteração na Fatura.
         var pedido = _repoPedido.GetById(itemPedido.PedidoId);
 

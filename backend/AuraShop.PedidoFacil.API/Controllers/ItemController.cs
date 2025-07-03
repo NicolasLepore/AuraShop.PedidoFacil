@@ -37,7 +37,8 @@ namespace AuraShop.PedidoFacil.API.Controllers
 
         [HttpGet("{id}")]
         [ProducesResponseType(typeof(ReadItemDto), StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType
+            (typeof(NotFoundResult), StatusCodes.Status404NotFound)]
         public IActionResult GetById(int id)
         {
             var dto = _repo.GetById(id);
@@ -49,7 +50,8 @@ namespace AuraShop.PedidoFacil.API.Controllers
 
         [HttpGet("{name}/{size}")]
         [ProducesResponseType(typeof(ReadItemDto), StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType
+            (typeof(NotFoundResult), StatusCodes.Status404NotFound)]
         public IActionResult GetByNameAndSize(string name, string size)
         {
             var dto = _repo.GetByNameAndSize(name, size);
@@ -67,8 +69,10 @@ namespace AuraShop.PedidoFacil.API.Controllers
         }
 
         [HttpPut("{id}")]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType
+            (typeof(NoContentResult), StatusCodes.Status204NoContent)]
+        [ProducesResponseType
+            (typeof(NotFoundResult), StatusCodes.Status404NotFound)]
         public IActionResult Update(int id, [FromBody] UpdateItemDto dto)
         {
             var success = _repo.Update(id, dto);
@@ -80,8 +84,10 @@ namespace AuraShop.PedidoFacil.API.Controllers
         }
 
         [HttpDelete("{id}")]
-        [ProducesResponseType(StatusCodes.Status204NoContent)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType
+            (typeof(NoContentResult), StatusCodes.Status204NoContent)]
+        [ProducesResponseType
+            (typeof(NotFoundResult), StatusCodes.Status404NotFound)]
         public IActionResult Delete(int id)
         {
             bool itemFound = _repo.Delete(id);

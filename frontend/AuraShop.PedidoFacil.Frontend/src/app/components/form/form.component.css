@@ -1,0 +1,34 @@
+.form {
+    background-color: #FAFAFA;
+    width: 100%;
+    height: 90vh;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form input {
+    font-size: 18px;
+    border: none;
+    padding: 1rem;
+    border-bottom: 1px solid #486ce4;
+    background-color: #FAFAFA;
+}
+.form input:focus {
+    outline: none;
+}
+
+.form .submit {
+    color: #FAFAFA;
+    background-color: #486ce4;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.form .submit:hover {
+    transform: scale(0.95);
+    transition: all 0.35s;
+    background-color: #486ce4c9;
+}

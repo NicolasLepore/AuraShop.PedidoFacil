@@ -50,10 +50,9 @@ builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
 builder.Services.AddScoped<IItemPedidoRepository, ItemPedidoRepository>();
 
 builder.Services.AddScoped<FaturaService>();
-builder.Services.AddScoped<CreateItemPedidoUseCase>();
-
 builder.Services.AddScoped<IAuthService, AuthService>();
-builder.Services.AddScoped<TokenService>();
+
+builder.Services.AddScoped<CreateItemPedidoUseCase>();
 
 builder.Services.AddCors();
 

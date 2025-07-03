@@ -21,7 +21,8 @@ namespace AuraShop.PedidoFacil.API.Controllers
 
         [HttpPost]
         [ProducesResponseType(typeof(ItemPedido), StatusCodes.Status201Created)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType
+            (typeof(BadRequestResult), StatusCodes.Status400BadRequest)]
         public IActionResult Create([FromBody] CreateItemPedidoDto dto)
         {
             var itemPedido = _createUseCase.Execute(dto);

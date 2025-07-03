@@ -17,7 +17,8 @@ namespace AuraShop.PedidoFacil.API.Controllers
 
         [HttpPost]
         [ProducesResponseType(typeof(Pedido), StatusCodes.Status201Created)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType
+            (typeof(BadRequestResult), StatusCodes.Status400BadRequest)]
         public IActionResult Create([FromBody] CreatePedidoDto dto)
         {
             var pedido = _repo.Add(dto);
@@ -38,7 +39,8 @@ namespace AuraShop.PedidoFacil.API.Controllers
 
         [HttpGet("{id}")]
         [ProducesResponseType(typeof(ReadPedidoDto), StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType
+            (typeof(NotFoundResult), StatusCodes.Status404NotFound)]
         public IActionResult GetById(int id)
         {
             var dto = _repo.GetById(id);

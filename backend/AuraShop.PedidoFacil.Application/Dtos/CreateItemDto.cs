@@ -17,7 +17,6 @@ namespace AuraShop.PedidoFacil.Application.Dtos
         public string? Cor { get; set; }
 
         [Required]
-        [Range(0, 100.00)]
         public float? Preco { get; set; }
     }
 }

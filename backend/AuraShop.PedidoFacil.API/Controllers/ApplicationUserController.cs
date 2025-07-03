@@ -1,4 +1,5 @@
 ﻿using AuraShop.PedidoFacil.Application.Dtos.Request;
+using AuraShop.PedidoFacil.Application.Dtos.Response;
 using AuraShop.PedidoFacil.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,11 +16,10 @@ namespace AuraShop.PedidoFacil.API.Controllers
             _auth = auth;
         }
 
-        [HttpPost]
+        [HttpPost("/register")]
         [ProducesResponseType
             (typeof(RegisterApplicationUserRequest), StatusCodes.Status201Created)]
-        [ProducesResponseType
-            (typeof(BadRequestResult), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Create
             ([FromBody]RegisterApplicationUserRequest dto)
         {
@@ -29,6 +29,23 @@ namespace AuraShop.PedidoFacil.API.Controllers
                     ("A senha deve possuir ao menos 1 caractere numérico!");
 
             return Created("", dto);
+        }
+
+        [HttpPost("/login")]
+        [ProducesResponseType
+            (typeof(LoginApplicationUserResponse), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Login
+            ([FromBody]LoginApplicationUserRequest dto)
+        {
+            var response = await _auth.Login(dto);
+
+            return Ok(new 
+            {
+                response.Username,
+                response.Role,
+                response.Token
+            });
         }
     }
 }

@@ -4,6 +4,7 @@ using AuraShop.PedidoFacil.Infra.Identity;
 using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using AuraShop.PedidoFacil.Application.Interfaces;
+using AuraShop.PedidoFacil.Application.Dtos.Response;
 
 namespace AuraShop.PedidoFacil.Infra.Services
 {
@@ -12,12 +13,16 @@ namespace AuraShop.PedidoFacil.Infra.Services
         private readonly IdentityContext _context;
         private readonly IMapper _mapper;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly TokenService _tokenService;
 
-        public AuthService(IdentityContext context, IMapper mapper, UserManager<ApplicationUser> userManager)
+        public AuthService(IdentityContext context, IMapper mapper, UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, TokenService tokenService)
         {
             _context = context;
             _mapper = mapper;
             _userManager = userManager;
+            _signInManager = signInManager;
+            _tokenService = tokenService;
         }
 
         public async Task<bool> Register(RegisterApplicationUserRequest request)
@@ -28,9 +33,26 @@ namespace AuraShop.PedidoFacil.Infra.Services
             return result.Succeeded;
         }
 
-        public async Task<bool> Login(LoginApplicationUserRequest request)
+        public async Task<LoginApplicationUserResponse> Login(LoginApplicationUserRequest request)
         {
-            throw new NotImplementedException();
+            var result = await _signInManager.PasswordSignInAsync(request.Username, request.Password, false, false);
+
+            if (!result.Succeeded) throw new ArgumentException("Usuario ou senha incorretos");
+
+            var user = _signInManager
+                .UserManager
+                .Users.FirstOrDefault(u => u.UserName == request.Username)!;
+
+            var token = _tokenService.Generate(user);
+
+            var userResponse = new LoginApplicationUserResponse()
+            {
+                Username = user.UserName!,
+                Token = token,
+                Role = "Member"
+            };
+
+            return userResponse;
         }
     }
 }

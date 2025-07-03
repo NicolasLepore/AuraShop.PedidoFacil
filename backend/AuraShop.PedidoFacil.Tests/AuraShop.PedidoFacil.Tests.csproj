@@ -26,7 +26,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="API\" />
     <Folder Include="Integration\" />
     <Folder Include="Benchmark\" />
     <Folder Include="Unit\" />

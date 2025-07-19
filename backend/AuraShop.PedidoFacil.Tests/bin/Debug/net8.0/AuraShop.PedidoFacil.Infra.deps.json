@@ -664,12 +664,18 @@
           "AuraShop.PedidoFacil.Domain": "1.0.0"
         },
         "runtime": {
-          "AuraShop.PedidoFacil.Application.dll": {}
+          "AuraShop.PedidoFacil.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "AuraShop.PedidoFacil.Domain/1.0.0": {
         "runtime": {
-          "AuraShop.PedidoFacil.Domain.dll": {}
+          "AuraShop.PedidoFacil.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

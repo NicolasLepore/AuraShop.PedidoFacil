@@ -1,11 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "o1OAwaB0p7SNReZbyEX38THpsYZuc/eAIyvJu9BxCoI=",
-  "Source": "AuraShop.PedidoFacil.API",
-  "BasePath": "_content/AuraShop.PedidoFacil.API",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
-}
+{"Version":1,"Hash":"W01lDmsI9m2iI1ZOlk7miOZgvXBXJlxU53sDd2piQX0=","Source":"AuraShop.PedidoFacil.API","BasePath":"_content/AuraShop.PedidoFacil.API","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

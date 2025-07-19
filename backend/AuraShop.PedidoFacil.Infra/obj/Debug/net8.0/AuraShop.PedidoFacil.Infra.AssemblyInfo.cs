@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuraShop.PedidoFacil.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbb34cbd952be2fc7c456170844583a8531df41a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a599b27fd0e515dab90322eb638ca2b9240f4dc6")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuraShop.PedidoFacil.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuraShop.PedidoFacil.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

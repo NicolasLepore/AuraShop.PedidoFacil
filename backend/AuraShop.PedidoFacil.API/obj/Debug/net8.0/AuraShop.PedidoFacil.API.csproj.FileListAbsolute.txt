@@ -260,11 +260,6 @@ C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.AP
 C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\obj\Debug\net8.0\AuraShop.PedidoFacil.API.sourcelink.json
 C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\obj\Debug\net8.0\staticwebassets\msbuild.AuraShop.PedidoFacil.API.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\obj\Debug\net8.0\staticwebassets\msbuild.build.AuraShop.PedidoFacil.API.props
-C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.AuraShop.PedidoFacil.API.props
-C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.AuraShop.PedidoFacil.API.props
-C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\obj\Debug\net8.0\scopedcss\bundle\AuraShop.PedidoFacil.API.styles.css
 C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\obj\Debug\net8.0\AuraShop.66706665.Up2Date
 C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\obj\Debug\net8.0\AuraShop.PedidoFacil.API.dll
@@ -350,3 +345,11 @@ C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.AP
 C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\bin\Debug\net8.0\AuraShop.PedidoFacil.API.staticwebassets.endpoints.json
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

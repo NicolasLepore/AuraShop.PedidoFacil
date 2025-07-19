@@ -1,5 +1,5 @@
 ﻿using AuraShop.PedidoFacil.Application.Dtos;
-using AuraShop.PedidoFacil.Application.IRepositories;
+using AuraShop.PedidoFacil.Application.Repositories;
 using AuraShop.PedidoFacil.Application.UseCases;
 using AuraShop.PedidoFacil.Domain.Models;
 using Microsoft.AspNetCore.Mvc;

@@ -1,5 +1,5 @@
 using AuraShop.PedidoFacil.Application.Interfaces;
-using AuraShop.PedidoFacil.Application.IRepositories;
+using AuraShop.PedidoFacil.Application.Repositories;
 using AuraShop.PedidoFacil.Application.Services;
 using AuraShop.PedidoFacil.Application.UseCases;
 using AuraShop.PedidoFacil.Infra.Data;
@@ -42,6 +42,8 @@ builder.Services.Configure<IdentityOptions>(opt =>
     opt.Password.RequireNonAlphanumeric = false;
     opt.Password.RequireUppercase = false;
 });
+
+// Tacar os IRepositories no DOMAIN
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 

@@ -1,6 +1,6 @@
 ﻿using AuraShop.PedidoFacil.Application.Dtos;
-using AuraShop.PedidoFacil.Application.IRepositories;
 using AuraShop.PedidoFacil.Application.Models;
+using AuraShop.PedidoFacil.Application.Repositories;
 
 namespace AuraShop.PedidoFacil.Application.Services
 {

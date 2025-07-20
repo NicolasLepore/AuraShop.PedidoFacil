@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "AuraShop.PedidoFacil.Domain\\Models\\Pedido.cs",
               "ToolTip": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.Domain\\Models\\Pedido.cs",
               "RelativeToolTip": "AuraShop.PedidoFacil.Domain\\Models\\Pedido.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBUAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-09T17:27:37.37Z",
               "EditorCaption": ""
@@ -63,7 +63,8 @@
               "RelativeToolTip": "AuraShop.PedidoFacil.Domain\\Models\\ItemPedido.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T17:27:31.161Z"
+              "WhenOpened": "2025-07-09T17:27:31.161Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -75,7 +76,8 @@
               "RelativeToolTip": "AuraShop.PedidoFacil.Domain\\Models\\Item.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T17:27:24.155Z"
+              "WhenOpened": "2025-07-09T17:27:24.155Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -87,7 +89,8 @@
               "RelativeToolTip": "AuraShop.PedidoFacil.API\\Controllers\\ApplicationUserController.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-09T01:45:47.296Z"
+              "WhenOpened": "2025-07-09T01:45:47.296Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,8 +1,34 @@
 [
   {
     "ContainingType": "AuraShop.PedidoFacil.API.Controllers.ApplicationUserController",
+    "Method": "Login",
+    "RelativePath": "api/v1/auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AuraShop.PedidoFacil.Application.Dtos.Request.LoginApplicationUserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AuraShop.PedidoFacil.Application.Dtos.Request.LoginApplicationUserRequest",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuraShop.PedidoFacil.API.Controllers.ApplicationUserController",
     "Method": "Create",
-    "RelativePath": "api/v1/ApplicationUser",
+    "RelativePath": "api/v1/auth/register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

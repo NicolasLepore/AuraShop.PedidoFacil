@@ -353,3 +353,11 @@ C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.AP
 C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

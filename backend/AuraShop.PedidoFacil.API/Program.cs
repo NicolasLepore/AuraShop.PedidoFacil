@@ -33,7 +33,7 @@ builder.Services.AddDbContext<PedidoFacilContext>(opt =>
 });
 
 builder.Services
-    .AddIdentity<ApplicationUser, IdentityRole>()
+    .AddIdentity<ApplicationUser, ApplicationRole>()
     .AddEntityFrameworkStores<IdentityContext>()
     .AddDefaultTokenProviders();
 
@@ -41,6 +41,9 @@ builder.Services.Configure<IdentityOptions>(opt =>
 {
     opt.Password.RequireNonAlphanumeric = false;
     opt.Password.RequireUppercase = false;
+
+    opt.Lockout.MaxFailedAccessAttempts = 3;
+    opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(3);
 });
 
 // Tacar os IRepositories no DOMAIN

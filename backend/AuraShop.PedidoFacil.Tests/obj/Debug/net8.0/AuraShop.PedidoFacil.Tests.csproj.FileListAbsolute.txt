@@ -457,3 +457,11 @@ C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.Te
 C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.Tests\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.EventLog.dll
 C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.Tests\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.EventSource.dll
 C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.Tests\bin\Debug\net8.0\refs\System.Diagnostics.EventLog.dll
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.Tests\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.Tests\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.Tests\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.Tests\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.Tests\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.Tests\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.Tests\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\nigam\source\repos\AuraShop.PedidoFacil\backend\AuraShop.PedidoFacil.Tests\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

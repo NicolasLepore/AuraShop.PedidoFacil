@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace AuraShop.PedidoFacil.API.Controllers
 {
     [ApiController]
-    [Route("api/v1/[controller]")]
+    [Route("api/v1/auth")]
     public class ApplicationUserController : ControllerBase
     {
         private readonly IAuthService _auth;
@@ -15,7 +15,7 @@ namespace AuraShop.PedidoFacil.API.Controllers
             _auth = auth;
         }
 
-        [HttpPost]
+        [HttpPost("register")]
         [ProducesResponseType
             (typeof(RegisterApplicationUserRequest), StatusCodes.Status201Created)]
         [ProducesResponseType
@@ -29,6 +29,20 @@ namespace AuraShop.PedidoFacil.API.Controllers
                     ("A senha deve possuir ao menos 1 caractere numérico!");
 
             return Created("", dto);
+        }
+
+        [HttpPost("login")]
+        [ProducesResponseType
+            (typeof(LoginApplicationUserRequest), StatusCodes.Status200OK)]
+        public async Task<IActionResult> Login
+            ([FromBody]LoginApplicationUserRequest request)
+        {
+            // Após 3 tentativas bloquear o login por 10 minutos
+            bool success = await _auth.Login(request);
+
+            if (!success) throw new ArgumentException("Email ou senha incorretos.");
+
+            return Ok();
         }
     }
 }

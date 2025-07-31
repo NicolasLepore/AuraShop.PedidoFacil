@@ -1,0 +1,128 @@
+.register-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    @media(max-width: 339px) {
+        width: 100%;
+    }
+}
+
+.register-form .label-default {
+    font-size: var(--font-size-s);
+    font-weight: 400;
+    @media(max-width: 1024px) {
+        font-size: var(--font-size-xs);
+    }
+}
+
+.register-form .input-default {
+    padding: .5rem;
+
+    font-size: var(--font-size-xs);
+    border: 1px solid var(--gray-input);
+    border-radius: .25rem;
+
+}
+
+.register-form__passwordarea {
+    display: flex;
+    position: relative;
+}
+
+.register-form__passwordarea, .register-form__passwordarea input {
+    width: 100%;
+}
+
+.register-form__passwordarea img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 16px;
+    top: 4px;
+}
+
+.register__roles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register__roles div label {
+    margin-left: .5rem;
+
+    @media(max-width: 612px) {
+        padding: .5rem 0;
+    }
+}
+
+.register__roles input, .register__roles label {
+    cursor: pointer;
+}
+
+.register-form__submit {
+    font-size: var(--font-size-s);
+    background-color: var(--purple-primary);
+    color: #FFF;
+    cursor: pointer;
+    border-radius: .5rem;
+    padding: var(--padding-xs);
+    margin-bottom: 1rem;
+
+    @media(max-width: 339px) {
+        padding: var(--padding-2xs);
+
+    }
+
+}
+
+.register-social--top p {
+    font-size: var(--font-size-xs);
+    color: var(--gray-default);
+}
+
+.register-social {
+    width: 100%;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    @media(max-width: 1024px) {
+        margin: .5rem;
+    }
+}
+
+.register-social__google::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../../../../assets/google-icon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.register-social__apple::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../../../../assets/apple-icon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.register-form__footer {
+    @media(max-width: 1024px) {
+        font-size: var(--font-size-xs);
+
+        @media(max-width: 339px) {
+            text-align: center;
+        }
+    }
+}

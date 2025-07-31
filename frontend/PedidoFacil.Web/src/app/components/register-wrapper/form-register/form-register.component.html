@@ -1,0 +1,72 @@
+<form id="register-form" class="register-form">
+    <label class="label-default" for="nome">Nome</label>
+    <input class="input-default" id="nome" type="text" placeholder="Digite seu nome:" required>
+
+    <label class="label-default" for="email">Email</label>
+    <input class="input-default" id="email" type="text" placeholder="Digite seu email: " required> 
+
+    <label class="label-default" for="password">Senha</label>
+    <div class="register-form__passwordarea">
+        <input 
+            class="input-default" 
+            id="password" 
+            [type]="isPassVisible ? 'text' : 'password'" 
+            placeholder="Digite sua senha: " 
+            required
+        > 
+        <i (click)="viewPassword()">
+            <img 
+                [src]="isPassVisible ? 'images/eye-solid.svg' : 'images/eye-slash-solid.svg'" 
+                alt="Botão ver senha"
+            >
+        </i>
+    </div>
+
+    <label class="label-default" for="repassword">Confirmar senha</label>
+    <div class="register-form__passwordarea">
+        <input 
+            class="input-default" 
+            id="repassword" 
+            [type]="isRePassVisible ? 'text' : 'password'" 
+            placeholder="Confirme sua senha: " 
+            required
+        > 
+        <i (click)="viewRePassword()">
+            <img 
+                [src]="isRePassVisible ? 'images/eye-solid.svg' : 'images/eye-slash-solid.svg'" 
+                alt="Botão ver senha"
+            >
+        </i>
+    </div>
+
+   
+
+    <h2 class="label-default">Cargo</h2>
+    <div class="register__roles">
+        <div class="register__roles--left">
+            <input name="role" id="role-costumer" type="radio" required> 
+            <label class="label-default" for="role-costumer">Vendedor</label>
+        </div>
+       
+        <div class="register__roles--right">
+            <input name="role" id="role-supplier" type="radio" required>
+            <label class="label-default" for="role-supplier">Fornecedor</label>
+        </div>
+        
+    </div>
+    
+
+    <input class="register-form__submit" id="submit" type="submit" value="Cadastrar">
+</form>
+<div class="register-social--top">
+    <p>Ou registre-se com</p>
+    <hr>
+</div>
+<div class="register-social">
+    <a class="register-social__google" href="https://google.com" target="_blank"></a>
+    <a class="register-social__apple" href="#"></a>
+</div>
+<p class="register-form__footer">
+    Já possui uma conta? 
+    <a href="login">Faça seu login</a>
+</p>

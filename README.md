@@ -45,6 +45,7 @@
 - **Frontend:** Angular + TypeScript  
 - **Banco de Dados:** MySQL  
 - **Infraestrutura:** Docker + AWS (Amazon Web Services)
+- **Arquitetura:** Clean Architecture (separação por camadas e alta manutenibilidade)
 
 ---
 

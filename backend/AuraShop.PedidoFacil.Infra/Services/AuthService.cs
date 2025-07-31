@@ -4,6 +4,7 @@ using AuraShop.PedidoFacil.Infra.Identity;
 using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using AuraShop.PedidoFacil.Application.Interfaces;
+using AuraShop.PedidoFacil.Domain.Enums;
 
 namespace AuraShop.PedidoFacil.Infra.Services
 {
@@ -13,27 +14,32 @@ namespace AuraShop.PedidoFacil.Infra.Services
         private readonly IMapper _mapper;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
-        private readonly RoleManager<ApplicationRole> _roleManager;
 
         public AuthService
             (IdentityContext context,
             IMapper mapper,
             UserManager<ApplicationUser> userManager,
-            RoleManager<ApplicationRole> roleManager,
             SignInManager<ApplicationUser> signInManager)
         {
             _context = context;
             _mapper = mapper;
             _userManager = userManager;
-            _roleManager = roleManager;
             _signInManager = signInManager;
         }
 
         public async Task<bool> Register(RegisterApplicationUserRequest request)
         {
-            // Falta fazer a adição do role
             var user = _mapper.Map<ApplicationUser>(request);
             var result = await _userManager.CreateAsync(user, request.Password);
+
+            if(Enum.TryParse<RoleEnum>(request.RoleName, true, out var role)) 
+            {
+                await _userManager.AddToRoleAsync(user, role.ToString());
+            }
+            else
+            {
+                await _userManager.AddToRoleAsync(user, RoleEnum.User.ToString());
+            }
 
             return result.Succeeded;
         }

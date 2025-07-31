@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C79CBC21-8FC7-48F0-BBC1-39506AC42506}|AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj|c:\\users\\nigam\\source\\repos\\aurashop.pedidofacil\\backend\\aurashop.pedidofacil.api\\controllers\\applicationusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C79CBC21-8FC7-48F0-BBC1-39506AC42506}|AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj|solutionrelative:aurashop.pedidofacil.api\\controllers\\applicationusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0AE48674-4BE8-4F0B-BD8B-F459FCFE1C44}|AuraShop.PedidoFacil.Infra\\AuraShop.PedidoFacil.Infra.csproj|c:\\users\\nigam\\source\\repos\\aurashop.pedidofacil\\backend\\aurashop.pedidofacil.infra\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AE48674-4BE8-4F0B-BD8B-F459FCFE1C44}|AuraShop.PedidoFacil.Infra\\AuraShop.PedidoFacil.Infra.csproj|solutionrelative:aurashop.pedidofacil.infra\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.Infra\\Migrations\\20250720202104_ApplicationRolesCreation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AuraShop.PedidoFacil.Infra\\Migrations\\20250720202104_ApplicationRolesCreation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C79CBC21-8FC7-48F0-BBC1-39506AC42506}|AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj|c:\\users\\nigam\\source\\repos\\aurashop.pedidofacil\\backend\\aurashop.pedidofacil.api\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C79CBC21-8FC7-48F0-BBC1-39506AC42506}|AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj|solutionrelative:aurashop.pedidofacil.api\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0AE48674-4BE8-4F0B-BD8B-F459FCFE1C44}|AuraShop.PedidoFacil.Infra\\AuraShop.PedidoFacil.Infra.csproj|c:\\users\\nigam\\source\\repos\\aurashop.pedidofacil\\backend\\aurashop.pedidofacil.infra\\identity\\models\\applicationrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AE48674-4BE8-4F0B-BD8B-F459FCFE1C44}|AuraShop.PedidoFacil.Infra\\AuraShop.PedidoFacil.Infra.csproj|solutionrelative:aurashop.pedidofacil.infra\\identity\\models\\applicationrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A67CA44E-9F0C-43E2-B65D-C35EF035CA90}|AuraShop.PedidoFacil.Application\\AuraShop.PedidoFacil.Application.csproj|c:\\users\\nigam\\source\\repos\\aurashop.pedidofacil\\backend\\aurashop.pedidofacil.application\\dtos\\request\\loginapplicationuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A67CA44E-9F0C-43E2-B65D-C35EF035CA90}|AuraShop.PedidoFacil.Application\\AuraShop.PedidoFacil.Application.csproj|solutionrelative:aurashop.pedidofacil.application\\dtos\\request\\loginapplicationuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{946DD0F1-CB6D-42F3-893F-2ADA57BF1F79}|AuraShop.PedidoFacil.Domain\\AuraShop.PedidoFacil.Domain.csproj|c:\\users\\nigam\\source\\repos\\aurashop.pedidofacil\\backend\\aurashop.pedidofacil.domain\\enums\\roleenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{946DD0F1-CB6D-42F3-893F-2ADA57BF1F79}|AuraShop.PedidoFacil.Domain\\AuraShop.PedidoFacil.Domain.csproj|solutionrelative:aurashop.pedidofacil.domain\\enums\\roleenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0AE48674-4BE8-4F0B-BD8B-F459FCFE1C44}|AuraShop.PedidoFacil.Infra\\AuraShop.PedidoFacil.Infra.csproj|c:\\users\\nigam\\source\\repos\\aurashop.pedidofacil\\backend\\aurashop.pedidofacil.infra\\identity\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0AE48674-4BE8-4F0B-BD8B-F459FCFE1C44}|AuraShop.PedidoFacil.Infra\\AuraShop.PedidoFacil.Infra.csproj|solutionrelative:aurashop.pedidofacil.infra\\identity\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0AE48674-4BE8-4F0B-BD8B-F459FCFE1C44}|AuraShop.PedidoFacil.Infra\\AuraShop.PedidoFacil.Infra.csproj|c:\\users\\nigam\\source\\repos\\aurashop.pedidofacil\\backend\\aurashop.pedidofacil.infra\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0AE48674-4BE8-4F0B-BD8B-F459FCFE1C44}|AuraShop.PedidoFacil.Infra\\AuraShop.PedidoFacil.Infra.csproj|solutionrelative:aurashop.pedidofacil.infra\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C79CBC21-8FC7-48F0-BBC1-39506AC42506}|AuraShop.PedidoFacil.API\\AuraShop.PedidoFacil.API.csproj|c:\\users\\nigam\\source\\repos\\aurashop.pedidofacil\\backend\\aurashop.pedidofacil.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,99 +30,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "20250720202104_ApplicationRolesCreation.cs",
-              "DocumentMoniker": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.Infra\\Migrations\\20250720202104_ApplicationRolesCreation.cs",
-              "RelativeDocumentMoniker": "AuraShop.PedidoFacil.Infra\\Migrations\\20250720202104_ApplicationRolesCreation.cs",
-              "ToolTip": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.Infra\\Migrations\\20250720202104_ApplicationRolesCreation.cs",
-              "RelativeToolTip": "AuraShop.PedidoFacil.Infra\\Migrations\\20250720202104_ApplicationRolesCreation.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T20:21:04.318Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApplicationRole.cs",
-              "DocumentMoniker": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.Infra\\Identity\\Models\\ApplicationRole.cs",
-              "RelativeDocumentMoniker": "AuraShop.PedidoFacil.Infra\\Identity\\Models\\ApplicationRole.cs",
-              "ToolTip": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.Infra\\Identity\\Models\\ApplicationRole.cs",
-              "RelativeToolTip": "AuraShop.PedidoFacil.Infra\\Identity\\Models\\ApplicationRole.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T20:20:50.634Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.Infra\\Identity\\Models\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "AuraShop.PedidoFacil.Infra\\Identity\\Models\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.Infra\\Identity\\Models\\ApplicationUser.cs",
-              "RelativeToolTip": "AuraShop.PedidoFacil.Infra\\Identity\\Models\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T20:17:34.807Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginApplicationUserRequest.cs",
-              "DocumentMoniker": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.Application\\Dtos\\Request\\LoginApplicationUserRequest.cs",
-              "RelativeDocumentMoniker": "AuraShop.PedidoFacil.Application\\Dtos\\Request\\LoginApplicationUserRequest.cs",
-              "ToolTip": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.Application\\Dtos\\Request\\LoginApplicationUserRequest.cs",
-              "RelativeToolTip": "AuraShop.PedidoFacil.Application\\Dtos\\Request\\LoginApplicationUserRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T19:57:46.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ApplicationUserController.cs",
-              "DocumentMoniker": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.API\\Controllers\\ApplicationUserController.cs",
-              "RelativeDocumentMoniker": "AuraShop.PedidoFacil.API\\Controllers\\ApplicationUserController.cs",
-              "ToolTip": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.API\\Controllers\\ApplicationUserController.cs",
-              "RelativeToolTip": "AuraShop.PedidoFacil.API\\Controllers\\ApplicationUserController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T17:19:16.981Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.Infra\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "AuraShop.PedidoFacil.Infra\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.Infra\\Services\\AuthService.cs",
-              "RelativeToolTip": "AuraShop.PedidoFacil.Infra\\Services\\AuthService.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAApwDIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T20:02:34.609Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.API\\Program.cs",
-              "RelativeDocumentMoniker": "AuraShop.PedidoFacil.API\\Program.cs",
-              "ToolTip": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.API\\Program.cs",
-              "RelativeToolTip": "AuraShop.PedidoFacil.API\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-20T20:09:49.354Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -142,6 +43,71 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RoleEnum.cs",
+              "DocumentMoniker": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.Domain\\Enums\\RoleEnum.cs",
+              "RelativeDocumentMoniker": "AuraShop.PedidoFacil.Domain\\Enums\\RoleEnum.cs",
+              "ToolTip": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.Domain\\Enums\\RoleEnum.cs",
+              "RelativeToolTip": "AuraShop.PedidoFacil.Domain\\Enums\\RoleEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T03:06:15.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.Infra\\Identity\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "AuraShop.PedidoFacil.Infra\\Identity\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.Infra\\Identity\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "AuraShop.PedidoFacil.Infra\\Identity\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T02:51:36.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ItemController.cs",
+              "DocumentMoniker": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.API\\Controllers\\ItemController.cs",
+              "RelativeDocumentMoniker": "AuraShop.PedidoFacil.API\\Controllers\\ItemController.cs",
+              "ToolTip": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.API\\Controllers\\ItemController.cs",
+              "RelativeToolTip": "AuraShop.PedidoFacil.API\\Controllers\\ItemController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T02:39:31.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.Infra\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "AuraShop.PedidoFacil.Infra\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.Infra\\Services\\AuthService.cs",
+              "RelativeToolTip": "AuraShop.PedidoFacil.Infra\\Services\\AuthService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T20:02:34.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.API\\Program.cs",
+              "RelativeDocumentMoniker": "AuraShop.PedidoFacil.API\\Program.cs",
+              "ToolTip": "C:\\Users\\nigam\\source\\repos\\AuraShop.PedidoFacil\\backend\\AuraShop.PedidoFacil.API\\Program.cs",
+              "RelativeToolTip": "AuraShop.PedidoFacil.API\\Program.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-20T20:09:49.354Z",
+              "EditorCaption": ""
             }
           ]
         }

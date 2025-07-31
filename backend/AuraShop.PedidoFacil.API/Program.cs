@@ -46,8 +46,6 @@ builder.Services.Configure<IdentityOptions>(opt =>
     opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(3);
 });
 
-// Tacar os IRepositories no DOMAIN
-
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddScoped<IItemRepository, ItemRepository>();
@@ -81,8 +79,18 @@ app.UseCors(c =>
         .AllowCredentials();
 });
 
+app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
+
+using(var scope = app.Services.CreateScope())
+{
+    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<ApplicationRole>>();
+
+    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+
+    await RoleSeeder.Seed(userManager, roleManager);
+}
 
 app.Run();
 

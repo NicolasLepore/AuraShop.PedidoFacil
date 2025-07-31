@@ -1161,6 +1161,7 @@
           "email",
           "password",
           "rePassword",
+          "roleName",
           "username"
         ],
         "type": "object",
@@ -1180,6 +1181,10 @@
             "format": "password"
           },
           "rePassword": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "roleName": {
             "minLength": 1,
             "type": "string"
           }

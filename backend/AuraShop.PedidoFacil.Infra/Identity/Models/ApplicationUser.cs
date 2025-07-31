@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using AuraShop.PedidoFacil.Domain.Enums;
+using Microsoft.AspNetCore.Identity;
 
 namespace AuraShop.PedidoFacil.Infra.Identity.Models
 {
@@ -6,6 +7,5 @@ namespace AuraShop.PedidoFacil.Infra.Identity.Models
     {
         public ApplicationUser() : base() { }
 
-        // mais props
     }
 }

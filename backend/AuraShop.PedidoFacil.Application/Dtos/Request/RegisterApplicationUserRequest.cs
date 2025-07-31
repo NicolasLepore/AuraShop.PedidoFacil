@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using AuraShop.PedidoFacil.Domain.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace AuraShop.PedidoFacil.Application.Dtos.Request
 {
@@ -18,5 +19,8 @@ namespace AuraShop.PedidoFacil.Application.Dtos.Request
         [Required(ErrorMessage = "Campo Obrigatório")]
         [Compare("Password")]
         public string RePassword { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "Campo Obrigatório")]
+        public string RoleName { get; set; } = string.Empty;
     }
 }

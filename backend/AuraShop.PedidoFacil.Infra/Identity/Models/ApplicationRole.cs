@@ -1,5 +1,6 @@
 ﻿using AuraShop.PedidoFacil.Domain.Enums;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +23,7 @@ namespace AuraShop.PedidoFacil.Infra.Identity.Models
             }
             else
             {
-                this.Role = RoleEnum.Guest;
+                this.Role = RoleEnum.User;
             }
         }
 

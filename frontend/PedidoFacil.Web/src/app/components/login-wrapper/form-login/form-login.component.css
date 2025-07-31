@@ -19,7 +19,7 @@
     
     padding: var(--padding-xs) var(--padding-s);
 
-    border: 1px solid rgb(162, 162, 162);
+    border: 1px solid var(--gray-input);
     border-radius: .5rem;
 
     font-size: var(--font-size-s);

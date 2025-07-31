@@ -37,7 +37,7 @@ namespace AuraShop.PedidoFacil.API.Controllers
         public async Task<IActionResult> Login
             ([FromBody]LoginApplicationUserRequest request)
         {
-            // Após 3 tentativas bloquear o login por 10 minutos
+    
             bool success = await _auth.Login(request);
 
             if (!success) throw new ArgumentException("Email ou senha incorretos.");

@@ -1,6 +1,7 @@
 ﻿using AuraShop.PedidoFacil.Application.Dtos;
 using AuraShop.PedidoFacil.Application.Repositories;
 using AuraShop.PedidoFacil.Domain.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AuraShop.PedidoFacil.API.Controllers
@@ -17,6 +18,7 @@ namespace AuraShop.PedidoFacil.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "User")]
         [ProducesResponseType(typeof(Item), StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public IActionResult Post([FromBody] CreateItemDto dto)

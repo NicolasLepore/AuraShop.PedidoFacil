@@ -1,4 +1,4 @@
-# Nome do Projeto
+# PedidoFacil
 
 ![Badge de Versão](https://img.shields.io/badge/version-1.0-blue.svg)
 ![Status do Projeto](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)

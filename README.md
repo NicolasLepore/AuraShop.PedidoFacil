@@ -56,4 +56,4 @@ Este projeto está sob a licença [MIT](LICENSE).
 ## 📬 Contato
 - **Autor:** Nicolas Lepore  
 - **Email:** nicolaslpr06@gmail.com  
-- **LinkedIn:** [Nicolas Lepore](www.linkedin.com/in/nicolas-lepore)
+- **LinkedIn:** [www.linkedin.com/in/nicolas-lepore](www.linkedin.com/in/nicolas-lepore)
